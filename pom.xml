@@ -5,15 +5,18 @@
     <groupId>com.atguigu.gulimall</groupId>
     <artifactId>gulimall</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>gulimall-ware</name>
+    <name>gulimall</name>
     <description>GuliMall parent project for aggregating microservice modules</description>
     <packaging>pom</packaging>
 
     <modules>
+        <module>gulimall-common</module>
         <module>gulimall-coupon</module>
         <module>gulimall-member</module>
         <module>gulimall-order</module>
         <module>gulimall-product</module>
         <module>gulimall-ware</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
     </modules>
 </project>

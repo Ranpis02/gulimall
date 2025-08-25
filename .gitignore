@@ -1,2 +1,4 @@
 .idea
 **/target/
+renren-fast-vue/build/
+renren-fast-vue/node_modules
