@@ -1,3 +1,4 @@
 # Configure server port
-server.port=8080
+server:
+  port: 8079
 
