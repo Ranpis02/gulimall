@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Map;
 
 
@@ -78,6 +79,14 @@ public class CouponController {
         couponService.removeByIds(Arrays.asList(ids));
 
         return R.ok();
+    }
+
+    @RequestMapping("/member/list")
+    public R getMemberCouponsListDemo() {
+        CouponEntity couponEntity = new CouponEntity();
+        couponEntity.setCouponName("Get $10 off for every $100 spent");
+
+        return R.ok().put("coupons", Collections.singletonList(couponEntity));
     }
 
 }
