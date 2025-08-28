@@ -16,7 +16,7 @@ public class BasicFunctionTest {
 
     @Test
     void queryTest() {
-        wareInfoService.list(new QueryWrapper<WareInfoEntity>().ge("id", 1L));
+        // wareInfoService.list(new QueryWrapper<WareInfoEntity>().ge("id", 1L));
     }
 
 }

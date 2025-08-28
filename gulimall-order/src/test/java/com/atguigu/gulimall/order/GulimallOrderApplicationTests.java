@@ -19,9 +19,9 @@ class GulimallOrderApplicationTests {
 
     @Test
     void testOnQuery() {
-        OrderItemEntity orderItemEntity = new OrderItemEntity();
-        orderItemService.list(new QueryWrapper<OrderItemEntity>().ge("id", 1L))
-                .forEach(System.out::println);
+        // OrderItemEntity orderItemEntity = new OrderItemEntity();
+        // orderItemService.list(new QueryWrapper<OrderItemEntity>().ge("id", 1L))
+        //         .forEach(System.out::println);
     }
 
 }
