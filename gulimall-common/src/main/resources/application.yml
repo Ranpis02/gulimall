@@ -1,4 +1,4 @@
 # Configure server port
 server:
-  port: 8079
+  port: 8070
 
