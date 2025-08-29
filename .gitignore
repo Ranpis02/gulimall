@@ -1,5 +1,6 @@
 renren-fast-vue/build/
 renren-fast-vue/node_modules
+**/target/
 
 HELP.md
 !.mvn/wrapper/maven-wrapper.jar
