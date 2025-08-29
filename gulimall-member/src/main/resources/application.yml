@@ -1,23 +1,18 @@
 server:
   port: 8090
 spring:
-  datasource:
-    username: root
-    password: root
-    url: jdbc:mysql://192.168.56.10:3306/gulimall_ums
-    driver-class-name: com.mysql.cj.jdbc.Driver
   cloud:
     nacos:
       discovery:
         server-addr: 192.168.56.1:8848
       config:
         server-addr: 192.168.56.1:8848
+        namespace: 2bec1cc5-c2cd-4751-a603-2ccc3f30bf96
+        group: DEV
+        file-extension: yaml
   application:
     name: gulimall-member
   config:
-    import: optional:nacos:application.yml
-mybatis-plus:
-  mapper-locations: classpath*:/mapper/**/*.xml
-  global-config:
-    db-config:
-      id-type: auto
+    import:
+      - nacos:datasource
+      - nacos:mybatis-plus
