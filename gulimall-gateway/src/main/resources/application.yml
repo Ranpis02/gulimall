@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: gulimall-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.56.1:8848
+      config:
+        server-addr: 192.168.56.1:8848
+        namespace: 5061d394-85ce-4a0b-93a9-88669ad3348e
+        file-extension: yaml
+    loadbalancer:
+      cache:
+        caffeine:
+          spec: maximumSize=500,expireAfterWrite=10m
+  config:
+    import: optional:nacos:application.yml
+server:
+  port: 9030
+
+
+
